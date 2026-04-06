@@ -63,8 +63,8 @@ If you use this work, please cite:
   author = {SAI},
   title = {Optimization-Induced Dynamics and the Inverted-U: A Distillation-Based Theory of Optimal Misalignment},
   year = {2026},
-  doi = {[DOI to be added after Zenodo publication]},
-  url = {[URL to be added]}
+  doi = {10.5281/zenodo.19439785},
+  url = {https://doi.org/10.5281/zenodo.19439785}
 }
 ```
 
