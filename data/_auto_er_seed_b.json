@@ -1,0 +1,51 @@
+```json
+{
+  "merges": [
+    {
+      "from": ["dynamic_filter", "interface_phenomenon"],
+      "to": "boundary_function",
+      "reason": "両概念とも境界の機能的側面を記述しており、「認識と存在の相互作用により世界を整理する機能」と「情報処理システムと外界との間の動的な相互作用現象」は実質的に同一の境界機能を異なる語彙で表現している"
+    }
+  ],
+  "absorptions": [
+    {
+      "absorbed": "R1_CL2",
+      "into": "R1_CL3",
+      "type": "relabeling",
+      "reason": "boundaryがdynamic_filterまたはinterface_phenomenonのインスタンスであるという主張は、単なる名前付けに過ぎず、概念統合により同一概念への言及となる"
+    },
+    {
+      "absorbed": "R2_GP2",
+      "into": "R2_CL1",
+      "type": "同型",
+      "reason": "boundary_behaviorとcritical_boundaryは共に境界固有の性質を表しており、両者がresolutionと矛盾するという主張は実質的に同一"
+    }
+  ],
+  "concept_types": [
+    {"concept": "boundary", "type": "entity"},
+    {"concept": "boundary_band", "type": "entity"},
+    {"concept": "boundary_function", "type": "mechanism"},
+    {"concept": "continuity", "type": "property"},
+    {"concept": "discreteness", "type": "property"},
+    {"concept": "emergence", "type": "process"},
+    {"concept": "irrational_numbers", "type": "entity"},
+    {"concept": "resolution", "type": "property"},
+    {"concept": "mutual_conversion", "type": "process"},
+    {"concept": "digital_existence", "type": "entity"},
+    {"concept": "recognition_system", "type": "entity"},
+    {"concept": "discrete_recognition", "type": "process"},
+    {"concept": "information_packet", "type": "entity"},
+    {"concept": "critical_boundary", "type": "entity"},
+    {"concept": "observer_dependent_change", "type": "property"},
+    {"concept": "zeno_paradox", "type": "entity"},
+    {"concept": "new_motion_form", "type": "entity"},
+    {"concept": "boundary_behavior", "type": "property"},
+    {"concept": "rigid_boundary", "type": "entity"},
+    {"concept": "dual_nature_entity", "type": "entity"},
+    {"concept": "membrane_potential_oscillation", "type": "process"},
+    {"concept": "interference_pattern_clarity", "type": "property"},
+    {"concept": "composite_boundary_system", "type": "entity"},
+    {"concept": "experimental_theory_evaluation", "type": "process"}
+  ]
+}
+```

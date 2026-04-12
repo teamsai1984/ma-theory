@@ -1,0 +1,91 @@
+```json
+{
+  "merges": [
+    {
+      "from": ["long_term_perspective", "linear_thinking"],
+      "to": "long_term_perspective",
+      "reason": "両者とも時間の連続性を重視する同一の思考様式を指している"
+    },
+    {
+      "from": ["short_term_orientation", "point_thinking"],
+      "to": "short_term_orientation", 
+      "reason": "両者とも瞬間的・即座的な判断に焦点を当てる同一の思考傾向を指している"
+    },
+    {
+      "from": ["complete_compatibility", "same_dimension_hypothesis"],
+      "to": "complete_compatibility",
+      "reason": "両者とも異なる体系が完全に統合される同一の状態を指している"
+    },
+    {
+      "from": ["comprehensive_evaluation", "integrative_approach"],
+      "to": "integrative_approach",
+      "reason": "両者とも複数の価値体系を統合して活用する同一の手法を指している"
+    }
+  ],
+  "absorptions": [
+    {
+      "absorbed": "R1_CL5",
+      "into": "R1_CL5_2",
+      "type": "relabeling",
+      "reason": "is_instance_ofによる単純な分類ラベリング"
+    },
+    {
+      "absorbed": "R1_CL6",
+      "into": "R2_CL2_P2",
+      "type": "relabeling",
+      "reason": "is_instance_ofによる単純な分類ラベリング"
+    },
+    {
+      "absorbed": "R2_CL4",
+      "into": "R3_CL2",
+      "type": "relabeling",
+      "reason": "is_instance_ofによる単純な分類ラベリング"
+    },
+    {
+      "absorbed": "R2_CL6",
+      "into": "R2_CL5",
+      "type": "relabeling",
+      "reason": "is_instance_ofによる単純な分類ラベリング"
+    },
+    {
+      "absorbed": "R3_CL1_sup",
+      "into": "R3_CL1",
+      "type": "従属",
+      "reason": "qualitative_transformation_of_actionがquantifiabilityと矛盾するなら、quantifiabilityを基盤とするeconomic_rationalityとも矛盾するのは論理的帰結"
+    },
+    {
+      "absorbed": "R2_CL1",
+      "into": "R1_CL2",
+      "type": "同型",
+      "reason": "ethical_valuesはethical_judgmentの構成要素であり、実質的に同じ矛盾構造を表現"
+    }
+  ],
+  "concept_types": [
+    {"concept": "economic_rationality", "type": "mechanism"},
+    {"concept": "ethical_judgment", "type": "mechanism"},
+    {"concept": "rationality", "type": "property"},
+    {"concept": "judgment", "type": "process"},
+    {"concept": "quantifiability", "type": "property"},
+    {"concept": "short_term_orientation", "type": "property"},
+    {"concept": "long_term_perspective", "type": "property"},
+    {"concept": "temporal_perspective", "type": "property"},
+    {"concept": "complementary_relationship", "type": "property"},
+    {"concept": "relationship", "type": "property"},
+    {"concept": "value_neutrality", "type": "property"},
+    {"concept": "means", "type": "entity"},
+    {"concept": "control_system", "type": "mechanism"},
+    {"concept": "system", "type": "entity"},
+    {"concept": "complete_compatibility", "type": "property"},
+    {"concept": "ethical_values", "type": "entity"},
+    {"concept": "whole_brain_thinking", "type": "mechanism"},
+    {"concept": "modern_policies", "type": "entity"},
+    {"concept": "economic_integration", "type": "mechanism"},
+    {"concept": "dual_systems", "type": "entity"},
+    {"concept": "survival_modules", "type": "entity"},
+    {"concept": "qualitative_transformation_of_action", "type": "process"},
+    {"concept": "integrated_value_criteria", "type": "entity"},
+    {"concept": "complete_information_system", "type": "entity"},
+    {"concept": "immediate_optimal_solution", "type": "entity"}
+  ]
+}
+```

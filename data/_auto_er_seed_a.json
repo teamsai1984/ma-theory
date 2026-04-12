@@ -1,0 +1,73 @@
+```json
+{
+  "merges": [
+    {
+      "from": ["individuality_loss", "self_identity_dissolution"],
+      "to": "individuality_loss",
+      "reason": "両者は「個体が持つ独自性・自己認識が失われること」という同一の現象を異なる表現で記述している"
+    },
+    {
+      "from": ["qualitative_extinction", "subjectivity_loss"],
+      "to": "subjectivity_loss",
+      "reason": "両者は「個体固有の一人称的経験能力が失われること」という同一の現象を指している"
+    }
+  ],
+  "absorptions": [
+    {
+      "absorbed": "R1_CL1",
+      "into": "R1_CL5",
+      "type": "relabeling",
+      "reason": "主観的経験を説明条件の一例として分類しているだけで、実質的な関係性の記述ではない"
+    },
+    {
+      "absorbed": "R1_CL2",
+      "into": "R1_CL3",
+      "type": "relabeling", 
+      "reason": "還元不可能性を異なるカテゴリーの一例として単に分類しているだけ"
+    },
+    {
+      "absorbed": "R2_CL1",
+      "into": "R2_CL1_neg",
+      "type": "relabeling",
+      "reason": "還元不可能性を独自視点関係の一例として分類しているだけで、論理的内容に乏しい"
+    },
+    {
+      "absorbed": "R3_CL2_1",
+      "into": "R3_CL2_2",
+      "type": "従属",
+      "reason": "質的崩壊が個体性喪失の一例であることは、質的崩壊が主観性喪失を引き起こすという因果関係に含まれる"
+    }
+  ],
+  "concept_types": [
+    {"concept": "subjective_experience", "type": "property"},
+    {"concept": "irreducibility", "type": "property"},
+    {"concept": "explanation_condition", "type": "mechanism"},
+    {"concept": "untouchable_reality", "type": "entity"},
+    {"concept": "information_quality", "type": "property"},
+    {"concept": "cognitive_membrane", "type": "mechanism"},
+    {"concept": "individuality", "type": "property"},
+    {"concept": "cosmic_phenomenalization", "type": "process"},
+    {"concept": "information_being", "type": "entity"},
+    {"concept": "experience_texture", "type": "property"},
+    {"concept": "recognition_window", "type": "mechanism"},
+    {"concept": "resonance_phenomenon", "type": "process"},
+    {"concept": "opacity_of_subjectivity", "type": "property"},
+    {"concept": "direct_qualitative_access", "type": "mechanism"},
+    {"concept": "unique_perspective_relation", "type": "property"},
+    {"concept": "functional_convenience", "type": "property"},
+    {"concept": "transparent_reducible_cognition", "type": "entity"},
+    {"concept": "individual_cognitive_system", "type": "entity"},
+    {"concept": "cognitive_collapse_cascade", "type": "process"},
+    {"concept": "individuality_loss", "type": "process"},
+    {"concept": "meaning_dilution", "type": "process"},
+    {"concept": "described_experience_data", "type": "entity"},
+    {"concept": "qualitative_superposition", "type": "property"},
+    {"concept": "quantum_interference_phenomenon", "type": "process"},
+    {"concept": "qualitative_collapse", "type": "process"},
+    {"concept": "subjectivity_loss", "type": "process"},
+    {"concept": "complete_existential_collapse", "type": "process"},
+    {"concept": "subject_interaction", "type": "process"},
+    {"concept": "existence_mode_change", "type": "process"}
+  ]
+}
+```
