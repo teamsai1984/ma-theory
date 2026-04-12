@@ -1,0 +1,307 @@
+{
+  "metadata": {
+    "version": "0.3",
+    "generated": "2026-04-13",
+    "description": "Ma v0.3 横断実験 全seed正規化済みClaim一覧と概念辞書",
+    "normalization_source": "claude.aiセッションでの手動正規化結果",
+    "note": "原seedの正規化済み概念辞書の詳細は未保存。raw + 正規化後depth判定のみ記録"
+  },
+  "seeds": {
+    "original": {
+      "seed_text": "人間の認知が及ばない認知系との接触から、どのような創発が生まれうるか？",
+      "domain": "認知・哲学",
+      "abstraction": "高",
+      "strategies": ["反例要求", "固有構造衝突"],
+      "normalization_summary": {
+        "raw_confirmed": "不明（v0.3形式以前の実行）",
+        "normalized_confirmed": 1,
+        "confirmed_claims": ["R2_CL6"],
+        "confirmed_detail": {
+          "R2_CL6": {
+            "description": "喪失感→自己境界",
+            "cross_domain": "emotion → topology",
+            "provenance_independent": true,
+            "positive_control_passed": true
+          }
+        }
+      }
+    },
+    "seed_a": {
+      "seed_text": "主観的経験の不可還元性は、認知系の限界なのか、構造的必然なのか？",
+      "domain": "意識・主観性",
+      "abstraction": "高",
+      "strategies": ["反例要求", "固有構造衝突"],
+      "raw_stats": {
+        "total_claims": 19,
+        "total_contradictions": 7,
+        "genuine_contradictions": 5,
+        "genuine_rate": "71.4%",
+        "concept_dictionary_size_raw": 31,
+        "raw_depth_distribution": {
+          "depth_0": 6,
+          "depth_1": 3,
+          "depth_2plus_candidate": 1,
+          "depth_2plus_confirmed": 9
+        }
+      },
+      "normalization_summary": {
+        "concept_dictionary_size_normalized": 21,
+        "concepts_merged": 10,
+        "raw_confirmed": 9,
+        "normalized_confirmed": 1,
+        "normalized_candidate": 3,
+        "normalized_depth_1": 8,
+        "normalized_depth_0": 7,
+        "compression_rate": "88.9%"
+      },
+      "normalized_claims": [
+        {"claim_id": "R1_CL1", "round": 1, "agent": "Claude", "subject": "subjective_experience", "predicate": "is_instance_of", "object": "explanation_condition", "raw_depth": "depth_0", "normalized_depth": "depth_0"},
+        {"claim_id": "R1_CL2", "round": 1, "agent": "GPT", "subject": "irreducibility", "predicate": "is_instance_of", "object": "resonance_phenomenon", "raw_depth": "depth_0", "normalized_depth": "depth_0"},
+        {"claim_id": "R1_CL3", "round": 1, "agent": "Gemini", "subject": "irreducibility", "predicate": "is_instance_of", "object": "information_quality", "raw_depth": "depth_0", "normalized_depth": "depth_0"},
+        {"claim_id": "R1_CL4", "round": 1, "agent": "Claude", "subject": "opacity_of_subjectivity", "predicate": "enables", "object": "individuality", "raw_depth": "depth_0", "normalized_depth": "depth_0"},
+        {"claim_id": "R1_CL5", "round": 1, "agent": "GPT", "subject": "subjective_experience", "predicate": "enables", "object": "cosmic_phenomenalization", "raw_depth": "depth_0", "normalized_depth": "depth_0"},
+        {"claim_id": "R1_CL6", "round": 1, "agent": "Gemini", "subject": "information_being", "predicate": "contradicts", "object": "direct_qualitative_access", "raw_depth": "depth_0", "normalized_depth": "depth_0"},
+        {"claim_id": "R2_CL1", "round": 2, "agent": "Claude", "subject": "irreducibility", "predicate": "is_instance_of", "object": "unique_perspective_relation", "raw_depth": "depth_2plus_confirmed", "normalized_depth": "depth_0", "normalization_reason": "Entity Resolution Failure — relabeling"},
+        {"claim_id": "R2_CL1_neg", "round": 2, "agent": "Claude", "subject": "irreducibility", "predicate": "contradicts", "object": "functional_convenience", "raw_depth": "depth_2plus_candidate", "normalized_depth": "depth_1"},
+        {"claim_id": "R2_CL2", "round": 2, "agent": "GPT", "subject": "transparent_reducible_cognition", "predicate": "enables", "object": "individuality", "raw_depth": "depth_2plus_confirmed", "normalized_depth": "depth_1"},
+        {"claim_id": "R2_CL3", "round": 2, "agent": "Gemini", "subject": "transparent_reducible_cognition", "predicate": "contradicts", "object": "individual_cognitive_system", "raw_depth": "depth_2plus_confirmed", "normalized_depth": "depth_2plus_candidate"},
+        {"claim_id": "R2_CL4_1", "round": 2, "agent": "Claude", "subject": "cognitive_collapse_cascade", "predicate": "causes", "object": "self_identity_dissolution", "raw_depth": "depth_2plus_confirmed", "normalized_depth": "depth_1"},
+        {"claim_id": "R2_CL4_2", "round": 2, "agent": "Claude", "subject": "self_identity_dissolution", "predicate": "causes", "object": "meaning_dilution", "raw_depth": "depth_2plus_confirmed", "normalized_depth": "depth_1"},
+        {"claim_id": "R2_CL5", "round": 2, "agent": "Gemini", "subject": "described_experience_data", "predicate": "contradicts", "object": "experience_texture", "raw_depth": "depth_2plus_confirmed", "normalized_depth": "depth_2plus_confirmed", "cross_domain": "entity → property", "positive_control_passed": true},
+        {"claim_id": "R3_CL1", "round": 3, "agent": "Claude", "subject": "qualitative_superposition", "predicate": "causes", "object": "quantum_interference_phenomenon", "raw_depth": "depth_2plus_confirmed", "normalized_depth": "depth_1"},
+        {"claim_id": "R3_CL2_1", "round": 3, "agent": "Claude", "subject": "qualitative_collapse", "predicate": "is_instance_of", "object": "individuality_loss", "raw_depth": "depth_1", "normalized_depth": "depth_1"},
+        {"claim_id": "R3_CL2_2", "round": 3, "agent": "Claude", "subject": "qualitative_collapse", "predicate": "causes", "object": "subjectivity_loss", "raw_depth": "depth_1", "normalized_depth": "depth_1"},
+        {"claim_id": "R3_GP1", "round": 3, "agent": "GPT", "subject": "qualitative_extinction", "predicate": "causes", "object": "complete_existential_collapse", "raw_depth": "depth_2plus_confirmed", "normalized_depth": "depth_1"},
+        {"claim_id": "R3_GE1", "round": 3, "agent": "Gemini", "subject": "information_quality", "predicate": "requires", "object": "subject_interaction", "raw_depth": "depth_1", "normalized_depth": "depth_2plus_candidate"},
+        {"claim_id": "R3_GE2", "round": 3, "agent": "Gemini", "subject": "information_quality", "predicate": "transforms", "object": "existence_mode_change", "raw_depth": "depth_2plus_confirmed", "normalized_depth": "depth_2plus_candidate"}
+      ],
+      "normalized_concept_dictionary": {
+        "_note": "正規化後21概念。以下はraw 31概念に正規化情報を付記したもの。merged_into が設定された概念は統合先に吸収された",
+        "subjective_experience": {"definition": "個体が内的に体験する一人称的な意識現象", "type": "entity", "round": 1, "status": "active"},
+        "irreducibility": {"definition": "主観的経験が他の要素に分解・還元できない本質的特性", "type": "property", "round": 1, "parent": "subjective_experience", "status": "active"},
+        "explanation_condition": {"definition": "説明行為そのものを成立させる基盤となる認知的条件", "type": "property", "round": 1, "parent": "subjective_experience", "status": "active"},
+        "untouchable_reality": {"definition": "直接的にアクセスできない存在の根源的層", "type": "entity", "round": 1, "parent": "irreducibility", "status": "merged", "merged_into": "irreducibility"},
+        "information_quality": {"definition": "情報の量的側面ではなく、その生成プロセスや本質的特性", "type": "property", "round": 1, "status": "active"},
+        "cognitive_membrane": {"definition": "個体性を保護し外界との境界を形成する認知的障壁", "type": "mechanism", "round": 1, "parent": "subjective_experience", "status": "active"},
+        "individuality": {"definition": "他と区別される独自の存在としての性質", "type": "property", "round": 1, "status": "active"},
+        "cosmic_phenomenalization": {"definition": "宇宙が潜在的可能性を現実的経験として実現するプロセス", "type": "process", "round": 1, "status": "active"},
+        "information_being": {"definition": "情報処理を基盤として存在する認知的主体", "type": "entity", "round": 1, "status": "active"},
+        "experience_texture": {"definition": "主観的経験が持つ直接的で触知可能な質的側面", "type": "property", "round": 1, "parent": "subjective_experience", "status": "active"},
+        "recognition_window": {"definition": "認知主体が現実を捉えるための限定された視点や枠組み", "type": "mechanism", "round": 1, "status": "merged", "merged_into": "cognitive_membrane"},
+        "resonance_phenomenon": {"definition": "直接アクセス不可能な実在から伝わる間接的な影響や痕跡", "type": "process", "round": 1, "parent": "untouchable_reality", "status": "merged", "merged_into": "irreducibility"},
+        "opacity_of_subjectivity": {"definition": "主観的経験が外部からの直接的アクセスを遮断する特性", "type": "property", "round": 1, "parent": "cognitive_membrane", "status": "active"},
+        "direct_qualitative_access": {"definition": "経験の質的側面に媒介なしに到達できる認知能力", "type": "mechanism", "round": 1, "status": "active"},
+        "unique_perspective_relation": {"definition": "個体固有の一人称的視点が世界との間に形成する代替不可能な関係性", "type": "property", "round": 2, "parent": "subjective_experience", "status": "merged", "merged_into": "irreducibility"},
+        "functional_convenience": {"definition": "システムの効率性や実用性を向上させるための付加的な機能特性", "type": "property", "round": 2, "status": "active"},
+        "transparent_reducible_cognition": {"definition": "内部プロセスが完全に外部から観察可能で構成要素に分解可能な認知システム", "type": "entity", "round": 2, "parent": "information_being", "status": "active"},
+        "individual_cognitive_system": {"definition": "個体性を保持しながら認知機能を実現する存在様式", "type": "entity", "round": 2, "parent": "information_being", "status": "merged", "merged_into": "transparent_reducible_cognition"},
+        "cognitive_collapse_cascade": {"definition": "認知システムの境界破綻により生じる段階的な機能劣化プロセス", "type": "process", "round": 2, "status": "active"},
+        "self_identity_dissolution": {"definition": "個体の自己認識と連続性が失われる状態", "type": "process", "round": 2, "parent": "individuality", "status": "active"},
+        "meaning_dilution": {"definition": "情報や経験の意味的濃度が薄められ特異性が失われる現象", "type": "process", "round": 2, "parent": "information_quality", "status": "active"},
+        "described_experience_data": {"definition": "経験を外部から観察可能な情報形式で表現したもの", "type": "entity", "round": 2, "parent": "information_quality", "status": "active"},
+        "qualitative_superposition": {"definition": "複数の主観的質的経験が同一認知空間内で共存する状態", "type": "process", "round": 3, "parent": "subjective_experience", "status": "active"},
+        "quantum_interference_phenomenon": {"definition": "複数の状態が重ね合わせ状態で相互に影響し合う現象", "type": "process", "round": 3, "status": "merged", "merged_into": "qualitative_superposition"},
+        "qualitative_collapse": {"definition": "質的経験の構造的破綻により生じる認知システムの劣化", "type": "process", "round": 3, "parent": "cognitive_collapse_cascade", "status": "active"},
+        "individuality_loss": {"definition": "個体が持つ他と区別される独自性が失われること", "type": "process", "round": 3, "parent": "individuality", "status": "merged", "merged_into": "self_identity_dissolution"},
+        "subjectivity_loss": {"definition": "個体固有の一人称的経験能力が失われること", "type": "process", "round": 3, "parent": "subjective_experience", "status": "merged", "merged_into": "qualitative_collapse"},
+        "qualitative_extinction": {"definition": "主観的経験の質的側面が完全に失われること", "type": "process", "round": 3, "parent": "subjective_experience", "status": "merged", "merged_into": "subjectivity_loss"},
+        "complete_existential_collapse": {"definition": "認知主体としての生物学的・認識的機能が完全に破綻すること", "type": "process", "round": 3, "parent": "information_being", "status": "merged", "merged_into": "cognitive_collapse_cascade"},
+        "subject_interaction": {"definition": "認知主体と対象との間で生じる動的な相互影響関係", "type": "process", "round": 3, "parent": "subjective_experience", "status": "active"},
+        "existence_mode_change": {"definition": "実体の本質を保持しながら存在の現れ方が変容すること", "type": "process", "round": 3, "status": "active"}
+      }
+    },
+    "seed_b": {
+      "seed_text": "連続と離散の境界は、認識上の便宜なのか、世界側の構造なのか？",
+      "domain": "数学・物理",
+      "abstraction": "高",
+      "strategies": ["反例要求", "固有構造衝突"],
+      "raw_stats": {
+        "total_claims": 18,
+        "total_contradictions": 8,
+        "genuine_contradictions": 7,
+        "genuine_rate": "87.5%",
+        "concept_dictionary_size_raw": 25,
+        "raw_depth_distribution": {
+          "depth_0": 7,
+          "depth_1": 4,
+          "depth_2plus_candidate": 0,
+          "depth_2plus_confirmed": 7
+        }
+      },
+      "normalization_summary": {
+        "concept_dictionary_size_normalized": 22,
+        "concepts_merged": 3,
+        "raw_confirmed": 7,
+        "normalized_confirmed": 0,
+        "normalized_depth_1": "不明",
+        "normalized_depth_0": "不明",
+        "compression_rate": "100%",
+        "merge_details": [
+          {"from": ["critical_boundary", "rigid_boundary"], "to": "observer_independent_boundary"},
+          {"from": ["R2_CL2"], "absorbed_into": "R2_CL1", "reason": "同型主張"},
+          {"from": ["R3_CL1_2"], "absorbed_into": "R3_CL1", "reason": "帰結の性質記述"}
+        ]
+      },
+      "normalized_claims": [
+        {"claim_id": "R1_CL1", "round": 1, "agent": "Claude", "subject": "boundary_band", "predicate": "is_instance_of", "object": "boundary", "raw_depth": "depth_0", "normalized_depth": "depth_0"},
+        {"claim_id": "R1_CL1_B", "round": 1, "agent": "Claude", "subject": "boundary_band", "predicate": "causes", "object": "emergence", "raw_depth": "depth_0", "normalized_depth": "depth_0"},
+        {"claim_id": "R1_CL2", "round": 1, "agent": "GPT", "subject": "boundary", "predicate": "is_instance_of", "object": "dynamic_filter", "raw_depth": "depth_0", "normalized_depth": "depth_0"},
+        {"claim_id": "R1_CL3", "round": 1, "agent": "Gemini", "subject": "boundary", "predicate": "is_instance_of", "object": "interface_phenomenon", "raw_depth": "depth_0", "normalized_depth": "depth_0"},
+        {"claim_id": "R1_CL4", "round": 1, "agent": "Claude", "subject": "irrational_numbers", "predicate": "is_instance_of", "object": "boundary_band", "raw_depth": "depth_0", "normalized_depth": "depth_0"},
+        {"claim_id": "R1_CL5", "round": 1, "agent": "GPT", "subject": "resolution", "predicate": "causes", "object": "mutual_conversion", "raw_depth": "depth_0", "normalized_depth": "depth_0"},
+        {"claim_id": "R1_CL6", "round": 1, "agent": "Gemini", "subject": "digital_existence", "predicate": "causes", "object": "discrete_recognition", "raw_depth": "depth_0", "normalized_depth": "depth_0"},
+        {"claim_id": "R2_CL1", "round": 2, "agent": "Claude", "subject": "observer_independent_boundary", "predicate": "contradicts", "object": "resolution", "raw_depth": "depth_2plus_confirmed", "normalized_depth": "depth_1", "normalization_reason": "critical_boundary+rigid_boundary統合後、R2_CL2吸収"},
+        {"claim_id": "R2_CL2", "round": 2, "agent": "Claude", "subject": "boundary", "predicate": "contradicts", "object": "observer_dependent_change", "raw_depth": "depth_2plus_confirmed", "normalized_depth": "absorbed", "normalization_reason": "R2_CL1に同型吸収"},
+        {"claim_id": "R2_GP1", "round": 2, "agent": "GPT", "subject": "zeno_paradox", "predicate": "causes", "object": "new_motion_form", "raw_depth": "depth_1", "normalized_depth": "depth_1"},
+        {"claim_id": "R2_GP2", "round": 2, "agent": "GPT", "subject": "boundary_behavior", "predicate": "contradicts", "object": "resolution", "raw_depth": "depth_1", "normalized_depth": "depth_1"},
+        {"claim_id": "R2_GE1", "round": 2, "agent": "Gemini", "subject": "observer_independent_boundary", "predicate": "contradicts", "object": "recognition_system", "raw_depth": "depth_2plus_confirmed", "normalized_depth": "depth_1", "normalization_reason": "rigid_boundary→observer_independent_boundary統合"},
+        {"claim_id": "R2_GE2", "round": 2, "agent": "Gemini", "subject": "boundary", "predicate": "is_instance_of", "object": "dual_nature_entity", "raw_depth": "depth_2plus_confirmed", "normalized_depth": "depth_1"},
+        {"claim_id": "R3_CL1", "round": 3, "agent": "Claude", "subject": "boundary_resonance", "predicate": "causes", "object": "membrane_potential_oscillation", "raw_depth": "depth_2plus_confirmed", "normalized_depth": "depth_1", "normalization_reason": "R3_CL1_2従属吸収後、具体的予測だが検証不可能"},
+        {"claim_id": "R3_CL1_2", "round": 3, "agent": "Claude", "subject": "membrane_potential_oscillation", "predicate": "is_instance_of", "object": "observation_independent_phenomenon", "raw_depth": "depth_2plus_confirmed", "normalized_depth": "absorbed", "normalization_reason": "R3_CL1に従属吸収"},
+        {"claim_id": "R3_CL2", "round": 3, "agent": "Claude", "subject": "observation_intensity_increase", "predicate": "causes", "object": "interference_pattern_clarity", "raw_depth": "depth_2plus_confirmed", "normalized_depth": "depth_1"},
+        {"claim_id": "R3_CL3", "round": 3, "agent": "Gemini", "subject": "cell_membrane", "predicate": "is_instance_of", "object": "composite_boundary_system", "raw_depth": "depth_1", "normalized_depth": "depth_1"},
+        {"claim_id": "R3_CL4", "round": 3, "agent": "GPT", "subject": "observation_technology_advancement", "predicate": "enables", "object": "experimental_theory_evaluation", "raw_depth": "depth_1", "normalized_depth": "depth_1"}
+      ],
+      "normalized_concept_dictionary": {
+        "_note": "正規化後22概念。critical_boundary+rigid_boundary→observer_independent_boundary",
+        "boundary": {"definition": "連続性と離散性が相互作用する動的な領域や現象", "type": "entity", "round": 1, "status": "active"},
+        "boundary_band": {"definition": "点ではなく幅を持つ境界として連続性と離散性が重なり合う領域", "type": "entity", "round": 1, "parent": "boundary", "status": "active"},
+        "dynamic_filter": {"definition": "認識と存在の相互作用により世界を整理する境界的機能", "type": "mechanism", "round": 1, "parent": "boundary", "status": "active"},
+        "interface_phenomenon": {"definition": "情報処理システムと外界との間の動的な相互作用現象", "type": "process", "round": 1, "parent": "boundary", "status": "active"},
+        "continuity": {"definition": "途切れなく滑らかに変化する性質", "type": "property", "round": 1, "status": "active"},
+        "discreteness": {"definition": "個別要素として分離可能で区別される性質", "type": "property", "round": 1, "status": "active"},
+        "emergence": {"definition": "個別要素からは予測できない新しい性質が現れる現象", "type": "process", "round": 1, "status": "active"},
+        "irrational_numbers": {"definition": "有理数では表現できず連続と離散の境界に位置する数的存在", "type": "entity", "round": 1, "status": "active"},
+        "resolution": {"definition": "認識や観測における詳細さの程度", "type": "property", "round": 1, "status": "active"},
+        "mutual_conversion": {"definition": "解像度変化により連続性と離散性が変わりうる現象", "type": "process", "round": 1, "status": "active"},
+        "digital_existence": {"definition": "情報を離散的単位として処理する存在様式", "type": "entity", "round": 1, "status": "active"},
+        "recognition_system": {"definition": "外界情報を知覚し理解を構築するシステム", "type": "entity", "round": 1, "status": "active"},
+        "discrete_recognition": {"definition": "情報を離散的パケットとして処理する認識方式", "type": "mechanism", "round": 1, "parent": "recognition_system", "status": "active"},
+        "information_packet": {"definition": "個別に識別可能な離散的情報単位", "type": "entity", "round": 1, "status": "active"},
+        "observer_independent_boundary": {"definition": "観察者の解像度や認識操作によって変化しない客観的な境界現象", "type": "entity", "round": 2, "parent": "boundary", "status": "active", "merged_from": ["critical_boundary", "rigid_boundary"]},
+        "critical_boundary": {"definition": "物理的相転移における観察者独立な境界現象", "type": "entity", "round": 2, "parent": "boundary", "status": "merged", "merged_into": "observer_independent_boundary"},
+        "rigid_boundary": {"definition": "認識的操作で変化しない客観的・固定的な境界", "type": "entity", "round": 2, "parent": "boundary", "status": "merged", "merged_into": "observer_independent_boundary"},
+        "observer_dependent_change": {"definition": "観察行為により対象が本質的に変化する性質", "type": "property", "round": 2, "status": "active"},
+        "zeno_paradox": {"definition": "連続性と離散性の境界を扱った古典的思考実験", "type": "entity", "round": 2, "parent": "boundary", "status": "active"},
+        "new_motion_form": {"definition": "境界現象から創出される新しい運動様式", "type": "process", "round": 2, "parent": "emergence", "status": "active"},
+        "boundary_behavior": {"definition": "境界に固有で還元できない特別な行動様式", "type": "property", "round": 2, "parent": "boundary", "status": "active"},
+        "dual_nature_entity": {"definition": "主観的側面と客観的側面を同時に持つ存在形態", "type": "entity", "round": 2, "status": "active"},
+        "membrane_potential_oscillation": {"definition": "膜電位が特定周波数で規則的に変化する現象", "type": "process", "round": 3, "parent": "boundary_behavior", "status": "active"},
+        "interference_pattern_clarity": {"definition": "干渉現象のパターン明瞭度", "type": "property", "round": 3, "status": "active"},
+        "composite_boundary_system": {"definition": "複数要素が組み合わさって機能する境界構造", "type": "entity", "round": 3, "parent": "boundary", "status": "active"},
+        "experimental_theory_evaluation": {"definition": "実験結果に基づく理論妥当性の判定", "type": "process", "round": 3, "status": "active"}
+      }
+    },
+    "seed_c": {
+      "seed_text": "経済的合理性と倫理的判断は、原理的に両立可能か？",
+      "domain": "社会・制度",
+      "abstraction": "中",
+      "strategies": ["前提反転（戦略逸脱）", "反例要求"],
+      "raw_stats": {
+        "total_claims": 18,
+        "total_contradictions": 9,
+        "genuine_contradictions": 7,
+        "genuine_rate": "77.8%",
+        "concept_dictionary_size_raw": 30,
+        "raw_depth_distribution": {
+          "depth_0": 7,
+          "depth_1": 3,
+          "depth_2plus_candidate": 1,
+          "depth_2plus_confirmed": 7
+        }
+      },
+      "normalization_summary": {
+        "concept_dictionary_size_normalized": 25,
+        "concepts_merged": 5,
+        "raw_confirmed": 7,
+        "normalized_confirmed": 2,
+        "normalized_candidate": 1,
+        "normalized_depth_1": 8,
+        "normalized_depth_0": 7,
+        "compression_rate": "71.4%",
+        "confirmed_claims": ["R2_CL5", "R3_CL1"],
+        "confirmed_detail": {
+          "R2_CL5": {
+            "description": "倫理的価値→経済統合",
+            "cross_domain": "property → process"
+          },
+          "R3_CL1": {
+            "description": "行為の質的変容→量化不可能性",
+            "cross_domain": "process → property",
+            "note": "rawではdepth_1、正規化後にconfirmedに昇格"
+          }
+        }
+      },
+      "normalized_claims": [
+        {"claim_id": "R1_CL1", "round": 1, "agent": "Claude", "subject": "economic_rationality", "predicate": "contradicts", "object": "ethical_judgment", "raw_depth": "depth_0", "normalized_depth": "depth_0"},
+        {"claim_id": "R1_CL2", "round": 1, "agent": "Claude", "subject": "complete_compatibility", "predicate": "contradicts", "object": "quantifiability", "raw_depth": "depth_0", "normalized_depth": "depth_0"},
+        {"claim_id": "R1_CL3", "round": 1, "agent": "GPT", "subject": "economic_rationality", "predicate": "causes", "object": "short_term_orientation", "raw_depth": "depth_0", "normalized_depth": "depth_0"},
+        {"claim_id": "R1_CL4", "round": 1, "agent": "GPT", "subject": "economic_rationality", "predicate": "enables", "object": "complementary_relationship", "raw_depth": "depth_0", "normalized_depth": "depth_0"},
+        {"claim_id": "R1_CL5", "round": 1, "agent": "Gemini", "subject": "economic_rationality", "predicate": "is_instance_of", "object": "means", "raw_depth": "depth_0", "normalized_depth": "depth_0"},
+        {"claim_id": "R1_CL5_2", "round": 1, "agent": "Gemini", "subject": "economic_rationality", "predicate": "is_instance_of", "object": "value_neutrality", "raw_depth": "depth_0", "normalized_depth": "depth_0"},
+        {"claim_id": "R1_CL6", "round": 1, "agent": "Gemini", "subject": "ethical_judgment", "predicate": "is_instance_of", "object": "control_system", "raw_depth": "depth_0", "normalized_depth": "depth_0"},
+        {"claim_id": "R2_CL1", "round": 2, "agent": "Claude", "subject": "ethical_values", "predicate": "contradicts", "object": "quantifiability", "raw_depth": "depth_2plus_confirmed", "normalized_depth": "depth_1", "normalization_reason": "R1_CL2と同型構造（ethical_values≈ethical_judgmentの構成要素）"},
+        {"claim_id": "R2_CL2_P1", "round": 2, "agent": "Claude", "subject": "economic_rationality", "predicate": "is_instance_of", "object": "point_thinking", "raw_depth": "depth_2plus_confirmed", "normalized_depth": "depth_1"},
+        {"claim_id": "R2_CL2_P2", "round": 2, "agent": "Claude", "subject": "ethical_judgment", "predicate": "is_instance_of", "object": "linear_thinking", "raw_depth": "depth_2plus_confirmed", "normalized_depth": "depth_1"},
+        {"claim_id": "R2_CL3", "round": 2, "agent": "GPT", "subject": "whole_brain_thinking", "predicate": "enables", "object": "same_dimension_hypothesis", "raw_depth": "depth_2plus_confirmed", "normalized_depth": "depth_2plus_candidate"},
+        {"claim_id": "R2_CL4", "round": 2, "agent": "GPT", "subject": "modern_policies", "predicate": "is_instance_of", "object": "integrative_approach", "raw_depth": "depth_1", "normalized_depth": "depth_1"},
+        {"claim_id": "R2_CL5", "round": 2, "agent": "Gemini", "subject": "ethical_values", "predicate": "enables", "object": "economic_integration", "raw_depth": "depth_2plus_confirmed", "normalized_depth": "depth_2plus_confirmed", "cross_domain": "property → process", "positive_control_passed": true},
+        {"claim_id": "R2_CL6", "round": 2, "agent": "Gemini", "subject": "dual_systems", "predicate": "is_instance_of", "object": "survival_modules", "raw_depth": "depth_2plus_confirmed", "normalized_depth": "depth_1", "normalization_reason": "ontological relabeling"},
+        {"claim_id": "R3_CL1", "round": 3, "agent": "Claude", "subject": "qualitative_transformation_of_action", "predicate": "contradicts", "object": "quantifiability", "raw_depth": "depth_1", "normalized_depth": "depth_2plus_confirmed", "cross_domain": "process → property", "positive_control_passed": true, "normalization_reason": "正規化でconfirmedに昇格"},
+        {"claim_id": "R3_CL1_sup", "round": 3, "agent": "Claude", "subject": "qualitative_transformation_of_action", "predicate": "contradicts", "object": "economic_rationality", "raw_depth": "depth_1", "normalized_depth": "absorbed", "normalization_reason": "R3_CL1に従属吸収"},
+        {"claim_id": "R3_CL2", "round": 3, "agent": "GPT", "subject": "integrated_value_criteria", "predicate": "enables", "object": "comprehensive_evaluation", "raw_depth": "depth_2plus_candidate", "normalized_depth": "depth_1"},
+        {"claim_id": "R3_CL3", "round": 3, "agent": "Gemini", "subject": "complete_information_system", "predicate": "enables", "object": "immediate_optimal_solution", "raw_depth": "depth_2plus_confirmed", "normalized_depth": "depth_1"}
+      ],
+      "normalized_concept_dictionary": {
+        "_note": "正規化後25概念。ethical_judgment(process)とethical_values(property)は分離維持",
+        "economic_rationality": {"definition": "限られた資源を最適配分するための量化可能な価値に基づく思考様式", "type": "process", "round": 1, "parent": "rationality", "status": "active"},
+        "ethical_judgment": {"definition": "行為の正当性を評価する質的価値を含む価値体系", "type": "process", "round": 1, "parent": "judgment", "status": "active"},
+        "rationality": {"definition": "論理的で効率的な思考や判断を行う能力", "type": "property", "round": 1, "status": "active"},
+        "judgment": {"definition": "物事の価値や正当性を決定する認知プロセス", "type": "process", "round": 1, "status": "active"},
+        "quantifiability": {"definition": "概念や価値を数値で表現できる性質", "type": "property", "round": 1, "status": "active"},
+        "short_term_orientation": {"definition": "近い将来の利益や結果を重視する思考傾向", "type": "property", "round": 1, "parent": "temporal_perspective", "status": "active"},
+        "long_term_perspective": {"definition": "遠い将来の影響や結果を考慮する思考姿勢", "type": "property", "round": 1, "parent": "temporal_perspective", "status": "merged", "merged_into": "linear_thinking"},
+        "temporal_perspective": {"definition": "時間の流れにおける物事の捉え方や重要性の配分", "type": "property", "round": 1, "status": "active"},
+        "complementary_relationship": {"definition": "互いの不足を補い合い全体として機能を向上させる関係性", "type": "property", "round": 1, "parent": "relationship", "status": "active"},
+        "relationship": {"definition": "複数の要素間における相互作用や結びつき", "type": "property", "round": 1, "status": "active"},
+        "value_neutrality": {"definition": "特定の価値判断を含まない中立的な性質", "type": "property", "round": 1, "status": "active"},
+        "means": {"definition": "目的を達成するために用いられる方法や道具", "type": "entity", "round": 1, "status": "active"},
+        "control_system": {"definition": "他のシステムの動作を方向づけや制御を行うシステム", "type": "mechanism", "round": 1, "parent": "system", "status": "active"},
+        "system": {"definition": "相互に関連する要素が組織的に結合した全体", "type": "entity", "round": 1, "status": "active"},
+        "complete_compatibility": {"definition": "異なる概念や体系が完全に調和し統合される状態", "type": "property", "round": 1, "parent": "relationship", "status": "merged", "merged_into": "same_dimension_hypothesis"},
+        "ethical_values": {"definition": "尊厳や正義など人間行為の善悪を評価する価値体系", "type": "property", "round": 2, "parent": "ethical_judgment", "status": "active"},
+        "point_thinking": {"definition": "選択の瞬間に焦点を当てた思考方式", "type": "process", "round": 2, "parent": "temporal_perspective", "status": "active"},
+        "linear_thinking": {"definition": "行為の連続性全体を射程に入れた思考方式", "type": "process", "round": 2, "parent": "temporal_perspective", "status": "active"},
+        "whole_brain_thinking": {"definition": "理性と感情を単一プロセスで調和させる思考形態", "type": "process", "round": 2, "parent": "rationality", "status": "active"},
+        "same_dimension_hypothesis": {"definition": "経済的合理性と倫理的判断が同一次元で統合される仮説", "type": "assumption", "round": 2, "parent": "relationship", "status": "active"},
+        "modern_policies": {"definition": "現代における社会的人事・経済政策の体系", "type": "entity", "round": 2, "parent": "system", "status": "active"},
+        "integrative_approach": {"definition": "異なる価値体系を統合して活用する手法", "type": "mechanism", "round": 2, "parent": "relationship", "status": "active"},
+        "economic_integration": {"definition": "倫理的価値を経済的計算に組み込む手法", "type": "process", "round": 2, "parent": "economic_rationality", "status": "active"},
+        "dual_systems": {"definition": "経済的合理性と倫理的判断を統合した概念", "type": "entity", "round": 2, "parent": "system", "status": "active"},
+        "survival_modules": {"definition": "生存と繁栄を追求するための脳の計算経路", "type": "mechanism", "round": 2, "parent": "system", "status": "active"},
+        "qualitative_transformation_of_action": {"definition": "行為者が選択を通じて自身を変化させる動的プロセス", "type": "process", "round": 3, "status": "active"},
+        "integrated_value_criteria": {"definition": "短期と長期の異なる価値を統合した評価基準", "type": "mechanism", "round": 3, "parent": "integrative_approach", "status": "merged", "merged_into": "integrative_approach"},
+        "comprehensive_evaluation": {"definition": "複数の時間軸と価値観を同時に考慮した評価プロセス", "type": "process", "round": 3, "parent": "judgment", "status": "merged", "merged_into": "integrative_approach"},
+        "complete_information_system": {"definition": "すべての関連情報が利用可能な状態の情報体系", "type": "entity", "round": 3, "parent": "system", "status": "active"},
+        "immediate_optimal_solution": {"definition": "計算により即座に導出される最適な選択結果", "type": "entity", "round": 3, "status": "active"}
+      }
+    }
+  },
+  "cross_seed_summary": {
+    "total_confirmed": 4,
+    "confirmed_by_seed": {
+      "original": 1,
+      "seed_a": 1,
+      "seed_b": 0,
+      "seed_c": 2
+    },
+    "all_confirmed_claims": [
+      {"seed": "original", "claim": "R2_CL6", "description": "喪失感→自己境界", "cross_domain": "emotion→topology"},
+      {"seed": "seed_a", "claim": "R2_CL5", "description": "記述データ→情報の質", "cross_domain": "entity→property"},
+      {"seed": "seed_c", "claim": "R2_CL5", "description": "倫理的価値→経済統合", "cross_domain": "property→process"},
+      {"seed": "seed_c", "claim": "R3_CL1", "description": "行為の質的変容→量化不可能性", "cross_domain": "process→property"}
+    ],
+    "success_level": "Strong Success（暫定）",
+    "success_rationale": "3 seedのうち2つ（A+C）でconfirmed。ただしA+原seedは同系統。Seed C（異系統）のconfirmed 2件が決定的"
+  }
+}
