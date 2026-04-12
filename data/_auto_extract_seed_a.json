@@ -1,0 +1,148 @@
+```json
+[
+  {
+    "claim_id": "R1_CL1",
+    "agent": "Claude",
+    "subject": "subjective_experience",
+    "predicate": "is_instance_of",
+    "object": "explanation_condition",
+    "round": 1
+  },
+  {
+    "claim_id": "R1_CL2",
+    "agent": "Claude",
+    "subject": "opacity_of_subjectivity",
+    "predicate": "enables",
+    "object": "individuality",
+    "round": 1
+  },
+  {
+    "claim_id": "R1_GP1",
+    "agent": "GPT",
+    "subject": "subjective_experience",
+    "predicate": "is_instance_of",
+    "object": "cosmic_phenomenalization",
+    "round": 1
+  },
+  {
+    "claim_id": "R1_GP2",
+    "agent": "GPT",
+    "subject": "irreducibility",
+    "predicate": "is_instance_of",
+    "object": "resonance_phenomenon",
+    "round": 1
+  },
+  {
+    "claim_id": "R1_GE1",
+    "agent": "Gemini",
+    "subject": "irreducibility",
+    "predicate": "is_instance_of",
+    "object": "information_quality",
+    "round": 1
+  },
+  {
+    "claim_id": "R1_GE2",
+    "agent": "Gemini",
+    "subject": "information_being",
+    "predicate": "contradicts",
+    "object": "direct_qualitative_access",
+    "round": 1
+  },
+  {
+    "claim_id": "R2_CL1",
+    "agent": "Claude",
+    "subject": "irreducibility",
+    "predicate": "contradicts",
+    "object": "functional_convenience",
+    "round": 2
+  },
+  {
+    "claim_id": "R2_CL2",
+    "agent": "Claude",
+    "subject": "cognitive_collapse_cascade",
+    "predicate": "causes",
+    "object": "self_identity_dissolution",
+    "round": 2
+  },
+  {
+    "claim_id": "R2_CL3",
+    "agent": "Claude",
+    "subject": "self_identity_dissolution",
+    "predicate": "causes",
+    "object": "meaning_dilution",
+    "round": 2
+  },
+  {
+    "claim_id": "R2_GP1",
+    "agent": "GPT",
+    "subject": "transparent_reducible_cognition",
+    "predicate": "enables",
+    "object": "individuality",
+    "round": 2
+  },
+  {
+    "claim_id": "R2_GE1",
+    "agent": "Gemini",
+    "subject": "transparent_reducible_cognition",
+    "predicate": "contradicts",
+    "object": "individual_cognitive_system",
+    "round": 2
+  },
+  {
+    "claim_id": "R2_GE2",
+    "agent": "Gemini",
+    "subject": "described_experience_data",
+    "predicate": "contradicts",
+    "object": "experience_texture",
+    "round": 2
+  },
+  {
+    "claim_id": "R3_CL1",
+    "agent": "Claude",
+    "subject": "qualitative_superposition",
+    "predicate": "causes",
+    "object": "quantum_interference_phenomenon",
+    "round": 3
+  },
+  {
+    "claim_id": "R3_CL2",
+    "agent": "Claude",
+    "subject": "qualitative_collapse",
+    "predicate": "is_instance_of",
+    "object": "individuality_loss",
+    "round": 3
+  },
+  {
+    "claim_id": "R3_CL3",
+    "agent": "Claude",
+    "subject": "qualitative_collapse",
+    "predicate": "causes",
+    "object": "subjectivity_loss",
+    "round": 3
+  },
+  {
+    "claim_id": "R3_GP1",
+    "agent": "GPT",
+    "subject": "qualitative_extinction",
+    "predicate": "causes",
+    "object": "complete_existential_collapse",
+    "round": 3
+  },
+  {
+    "claim_id": "R3_GE1",
+    "agent": "Gemini",
+    "subject": "information_quality",
+    "predicate": "requires",
+    "object": "subject_interaction",
+    "round": 3
+  },
+  {
+    "claim_id": "R3_GE2",
+    "agent": "Gemini",
+    "subject": "information_quality",
+    "predicate": "transforms",
+    "object": "existence_mode_change",
+    "round": 3
+  }
+]
+```

@@ -1,0 +1,154 @@
+[
+  {
+    "claim_id": "R1_CL1",
+    "agent": "Claude",
+    "subject": "economic_rationality",
+    "predicate": "contradicts",
+    "object": "ethical_judgment",
+    "round": 1
+  },
+  {
+    "claim_id": "R1_CL2",
+    "agent": "Claude",
+    "subject": "complete_compatibility",
+    "predicate": "contradicts",
+    "object": "quantifiability",
+    "round": 1
+  },
+  {
+    "claim_id": "R1_CL3",
+    "agent": "Claude",
+    "subject": "short_term_conflict",
+    "predicate": "transforms",
+    "object": "long_term_convergence",
+    "round": 1
+  },
+  {
+    "claim_id": "R1_GP1",
+    "agent": "GPT",
+    "subject": "economic_rationality",
+    "predicate": "causes",
+    "object": "short_term_orientation",
+    "round": 1
+  },
+  {
+    "claim_id": "R1_GP2",
+    "agent": "GPT",
+    "subject": "economic_rationality",
+    "predicate": "enables",
+    "object": "complementary_relationship",
+    "round": 1
+  },
+  {
+    "claim_id": "R1_GE1",
+    "agent": "Gemini",
+    "subject": "economic_rationality",
+    "predicate": "is_instance_of",
+    "object": "means",
+    "round": 1
+  },
+  {
+    "claim_id": "R1_GE2",
+    "agent": "Gemini",
+    "subject": "economic_rationality",
+    "predicate": "is_instance_of",
+    "object": "value_neutrality",
+    "round": 1
+  },
+  {
+    "claim_id": "R1_GE3",
+    "agent": "Gemini",
+    "subject": "ethical_judgment",
+    "predicate": "is_instance_of",
+    "object": "control_system",
+    "round": 1
+  },
+  {
+    "claim_id": "R2_CL1",
+    "agent": "Claude",
+    "subject": "ethical_values",
+    "predicate": "contradicts",
+    "object": "quantifiability",
+    "round": 2
+  },
+  {
+    "claim_id": "R2_CL2",
+    "agent": "Claude",
+    "subject": "economic_rationality",
+    "predicate": "is_instance_of",
+    "object": "point_thinking",
+    "round": 2
+  },
+  {
+    "claim_id": "R2_CL3",
+    "agent": "Claude",
+    "subject": "ethical_judgment",
+    "predicate": "is_instance_of",
+    "object": "linear_thinking",
+    "round": 2
+  },
+  {
+    "claim_id": "R2_GP1",
+    "agent": "GPT",
+    "subject": "whole_brain_thinking",
+    "predicate": "enables",
+    "object": "same_dimension_hypothesis",
+    "round": 2
+  },
+  {
+    "claim_id": "R2_GP2",
+    "agent": "GPT",
+    "subject": "modern_policies",
+    "predicate": "is_instance_of",
+    "object": "integrative_approach",
+    "round": 2
+  },
+  {
+    "claim_id": "R2_GE1",
+    "agent": "Gemini",
+    "subject": "ethical_values",
+    "predicate": "enables",
+    "object": "economic_integration",
+    "round": 2
+  },
+  {
+    "claim_id": "R2_GE2",
+    "agent": "Gemini",
+    "subject": "dual_systems",
+    "predicate": "is_instance_of",
+    "object": "survival_modules",
+    "round": 2
+  },
+  {
+    "claim_id": "R3_CL1",
+    "agent": "Claude",
+    "subject": "qualitative_transformation_of_action",
+    "predicate": "contradicts",
+    "object": "quantifiability",
+    "round": 3
+  },
+  {
+    "claim_id": "R3_CL2",
+    "agent": "Claude",
+    "subject": "qualitative_transformation_of_action",
+    "predicate": "contradicts",
+    "object": "economic_rationality",
+    "round": 3
+  },
+  {
+    "claim_id": "R3_GP1",
+    "agent": "GPT",
+    "subject": "integrated_value_criteria",
+    "predicate": "enables",
+    "object": "comprehensive_evaluation",
+    "round": 3
+  },
+  {
+    "claim_id": "R3_GE1",
+    "agent": "Gemini",
+    "subject": "complete_information_system",
+    "predicate": "enables",
+    "object": "immediate_optimal_solution",
+    "round": 3
+  }
+]
