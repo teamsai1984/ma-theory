@@ -1,0 +1,44 @@
+{
+  "model": "cyberagent/open-calm-3b",
+  "description": "Step C Conditional Surprise with Japanese-native model (OpenCALM-3B)",
+  "date": "2026-04-13",
+  "n_claims": 32,
+  "analysis": {
+    "all_32": {
+      "csf_delta": {
+        "confirmed": {"n": 3, "mean": 0.0138, "std": 0.2719},
+        "candidate": {"n": 5, "mean": -0.0508, "std": 0.2229},
+        "depth_1": {"n": 23, "mean": -0.0969, "std": 0.2988},
+        "depth_0": {"n": 1, "mean": 0.0894, "std": 0.0}
+      },
+      "orig_delta": {
+        "confirmed": {"n": 3, "mean": -0.1008, "std": 0.253},
+        "candidate": {"n": 5, "mean": -0.0183, "std": 0.1854},
+        "depth_1": {"n": 23, "mean": -0.3383, "std": 0.3169},
+        "depth_0": {"n": 1, "mean": -0.1843, "std": 0.0}
+      }
+    },
+    "filter4_13": {
+      "csf_delta": {
+        "confirmed": {"n": 3, "mean": 0.0138, "std": 0.2719},
+        "candidate": {"n": 4, "mean": -0.1305, "std": 0.1742},
+        "depth_1": {"n": 6, "mean": -0.133, "std": 0.3512}
+      },
+      "orig_delta": {
+        "confirmed": {"n": 3, "mean": -0.1008, "std": 0.253},
+        "candidate": {"n": 4, "mean": -0.0465, "std": 0.1974},
+        "depth_1": {"n": 6, "mean": -0.3887, "std": 0.3244}
+      }
+    },
+    "comparisons_filter4": {
+      "conf_vs_FP": {"csf_delta_diff": 0.1468, "orig_delta_diff": 0.2878},
+      "cand_vs_FP": {"csf_delta_diff": 0.0025, "orig_delta_diff": 0.3421},
+      "conf_vs_cand": {"csf_delta_diff": 0.1443, "orig_delta_diff": -0.0543}
+    },
+    "cross_model_comparison": {
+      "pythia_410m": {"confirmed": -0.778, "candidate": -0.868, "depth_1_FP": -1.085},
+      "opencalm_3b": {"confirmed": 0.0138, "candidate": -0.1305, "depth_1_FP": -0.133},
+      "note": "Pythia all-negative (Japanese noise). OpenCALM confirmed crosses zero. confirmed > depth_1 ordering preserved across both models."
+    }
+  }
+}
