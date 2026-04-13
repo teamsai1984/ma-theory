@@ -374,11 +374,10 @@ def _call_analysis(claude_client: anthropic.Anthropic, system: str, user_msg: st
     return resp.content[0].text
 
 def _parse_json(text: str) -> Any:
-    """Extract JSON from LLM response, tolerating markdown fences."""
+    """Extract JSON from LLM response, tolerating markdown fences and minor errors."""
     text = text.strip()
     if text.startswith("```"):
         lines = text.split("\n")
-        # Remove first and last fence lines
         start = 1
         end = len(lines)
         for i in range(len(lines) - 1, 0, -1):
@@ -386,7 +385,50 @@ def _parse_json(text: str) -> Any:
                 end = i
                 break
         text = "\n".join(lines[start:end])
-    return json.loads(text)
+    try:
+        return json.loads(text)
+    except json.JSONDecodeError:
+        # Attempt repair: fix common LLM JSON errors
+        import re
+        # Remove trailing commas before ] or }
+        repaired = re.sub(r',\s*([}\]])', r'\1', text)
+        # Fix unescaped newlines in strings
+        repaired = repaired.replace('\n', '\\n')
+        # Re-add actual newlines between JSON structure
+        repaired = repaired.replace('\\n', '\n')
+        try:
+            return json.loads(repaired)
+        except json.JSONDecodeError:
+            # Last resort: find the outermost JSON object/array
+            for start_ch, end_ch in [('{', '}'), ('[', ']')]:
+                s = text.find(start_ch)
+                if s == -1:
+                    continue
+                depth = 0
+                in_str = False
+                esc = False
+                for i in range(s, len(text)):
+                    c = text[i]
+                    if esc:
+                        esc = False
+                        continue
+                    if c == '\\':
+                        esc = True
+                        continue
+                    if c == '"':
+                        in_str = not in_str
+                        continue
+                    if in_str:
+                        continue
+                    if c == start_ch:
+                        depth += 1
+                    elif c == end_ch:
+                        depth -= 1
+                        if depth == 0:
+                            candidate = text[s:i+1]
+                            candidate = re.sub(r',\s*([}\]])', r'\1', candidate)
+                            return json.loads(candidate)
+            raise
 
 # ---------------------------------------------------------------------------
 # Layer 2: Divergence extraction
